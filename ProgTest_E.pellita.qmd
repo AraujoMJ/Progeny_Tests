@@ -22,7 +22,7 @@ library(breedR)
 ### 1.2. Load dataset
 
 ```{r load dt, message=F, warning=F}
-Data <- read.xlsx("DataPellitaBracell.xlsx", sheet = "Progenie") |>
+Data <- read.xlsx("DataPellita.xlsx", sheet = "Progenie") |>
   # Excluding Tratamento = 1
   filter(is.na(Tratamento))
 knitr::kable(head(Data, 10))
